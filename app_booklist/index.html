@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="booklist">
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/app_deps/lib/style.css">
+    <title ng-bind="pageTitle">Book List</title>
+</head>
+
+<body>
+    <ui-view></ui-view>
+    <!-- dependency Scripts -->
+
+    <!-- angualarjs -->
+    <script type="text/javascript" src="/app_deps/lib/angularjs/angular.min.js"></script>
+    <script type="text/javascript" src="/app_deps/lib/angularjs/angular-ui-router.js"></script>
+
+    <!--Angular App and route declarations-->
+    <script type="text/javascript" src="/app_deps/app.js"></script>
+
+    <!-- controllers -->
+    <script type="text/javascript" src="/app_deps/pages/login/login.controller.js"></script>
+
+    <!--Directives-->
+
+    
+
+    <!-- Services -->
+    <script type="text/javascript" src="/app_deps/common/services/apiService.js"></script>
+</body>
+
+</html>
