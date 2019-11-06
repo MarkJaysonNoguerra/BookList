@@ -16,7 +16,7 @@ app.set('view engine', 'pug');
 /**
  * For Project Alpha API routes
  */
-var routes = require("./app_api/connection");
+var routes = require("./app_api/routes");
 app.use("/api", routes);
 
 app.use(logger('dev'));

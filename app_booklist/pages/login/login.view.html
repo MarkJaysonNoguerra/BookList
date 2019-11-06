@@ -1,4 +1,40 @@
 <div ng-controller="loginController">
-    <h1>BookList Login</h1>
-
+    <div>
+        <h1>Create Account</h1>
+        <form ng-submit="loginVM.onSubmit()">
+            <div role="alert" ng-show="loginVM.formError != ''" class="alert alert-danger">
+                {{ loginVM.formError }}
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="usernameCreate" placeholder="Enter username" ng-model="loginVM.credentials.Username">
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="nameCreate" placeholder="Enter Name" ng-model="loginVM.credentials.Name">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="passwordCreate" placeholder="Enter password" ng-model="loginVM.credentials.Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+    </div>  
+    <div>
+        <h1>BookList Login</h1>
+        <form ng-submit="loginVM.onSubmit()">
+            <div role="alert" ng-show="loginVM.formError != ''" class="alert alert-danger">
+                {{ loginVM.formError }}
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter username" ng-model="loginVM.credentials.Username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter password" ng-model="loginVM.credentials.Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+    </div>
 </div>
