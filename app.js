@@ -26,11 +26,15 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+
+
+
 /**
  * 
  * Expose dependencies
  */
 app.use("/app_deps", express.static(path.join(__dirname, "app_booklist")));
+
 
 
 // catch 404 and forward to error handler

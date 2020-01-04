@@ -1,15 +1,15 @@
 (function() {
     angular
         .module("booklist")
-        .controller("loginController", mainPageController)
+        .controller("loginController", loginController)
 
-    mainPageController.$inject = [
+    loginController.$inject = [
         "$scope",
         "apiService",
         "$rootScope"
     ];
 
-    function mainPageController($scope, apiService, $rootScope) {
+    function loginController($scope, apiService, $rootScope) {
         var loginVM = this;
         $scope.loginVM = loginVM;   
       

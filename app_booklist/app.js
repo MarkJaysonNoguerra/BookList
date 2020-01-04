@@ -14,6 +14,10 @@
                 url: "/",
                 templateUrl: "/app_deps/pages/login/login.view.html"
             })
+            .state("books", {
+                url: "/books",
+                templateUrl : "/app_deps/pages/books/books.view.html"
+            });
     }
     angular
         .module("booklist")

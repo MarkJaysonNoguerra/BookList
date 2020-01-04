@@ -1,10 +1,8 @@
 (function() {
-    // eslint-disable-next-line no-undef
     angular
         .module("alpha")
         .service("authenticationService", authenticationService);
 
-    // eslint-disable-next-line no-undef
     authenticationService.$inject = ["$window", "$http"];
 
     function authenticationService($window, $http) {
